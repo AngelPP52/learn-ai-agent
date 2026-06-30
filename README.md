@@ -28,19 +28,21 @@
 | 主题 | 文档 | 核心内容 |
 |---|---|---|
 | 12-Factor Agents | [12-Factor Agents 设计原则](docs/12-factor-agents/12-factor-agents-principles.md) | 从 agent loop、上下文窗口、工具调用、控制流、暂停恢复、人类介入和无状态 reducer 等角度，总结可靠 Agent 的 12 条工程原则。 |
+| ReAct 框架 | [ReAct 框架：从推理行动循环到可控 Agent](docs/react-framework/react-framework.md) | 梳理 ReAct 的推理行动循环、最小实现、prompt 结构、失败模式、评测指标和生产控制点。 |
+| Tool Card 模板 | [Tool Card 模板](docs/react-framework/tool-card-template.md) | 提供工具描述模板，覆盖 Use When、Do Not Use When、输入输出 schema、错误类型、安全边界和示例。 |
 | Context Engineering 实践技巧 | [长文深度解析：大模型的上下文陷阱与 6 大修复技巧](docs/context-engineering/context-engineering.md) | 梳理上下文中毒、干扰、混淆、冲突等失效模式，以及 offload、pruning、summarization、quarantine 等修复技巧。 |
 | Context Engineering 2.0 | [Context Engineering 2.0](docs/context-engineering-2.0-pdf/context_engineering_2_cn_notes.md) | 基于论文梳理上下文工程的发展脉络、关键概念、阶段框架、上下文采集/管理/使用方法，以及对 Agent 系统的启发。 |
 | Build Agent Context Engineering | [Agent 架构综述：从 Prompt 到上下文工程构建 AI Agent](docs/build-agent-context-engineering/build-agent-context-engineering.md) | 原文资源本地化，覆盖结构化提示词、上下文工程、RAG、工具函数、Agent 规划与多 Agent。 |
 
 ## 学习路径
 
-这个仓库会按 AI Agent 工程能力的成长路线持续补齐内容。当前已沉淀四份文档，后续新增文档后，会把对应节点回填到这张路线图中。
+这个仓库会按 AI Agent 工程能力的成长路线持续补齐内容。当前已沉淀六份文档，后续新增文档后，会把对应节点回填到这张路线图中。
 
 | 阶段 | 学习主题 | 需要掌握的问题 | 当前状态 |
 |---:|---|---|---|
 | 1 | LLM 应用基础 | LLM、Prompt、Token、结构化输出、Function Calling 分别解决什么问题。 | 待沉淀 |
-| 2 | Agent 基础模型 | Agent loop 如何运转，模型、工具、状态和控制流如何配合。 | 已沉淀：[12-Factor Agents 设计原则](docs/12-factor-agents/12-factor-agents-principles.md) |
-| 3 | Tool Calling 与工具系统 | Tool schema 如何设计，工具权限、失败、重试和审计如何处理。 | 待沉淀 |
+| 2 | Agent 基础模型 | Agent loop 如何运转，模型、工具、状态和控制流如何配合。 | 已沉淀：[12-Factor Agents 设计原则](docs/12-factor-agents/12-factor-agents-principles.md)、[ReAct 框架：从推理行动循环到可控 Agent](docs/react-framework/react-framework.md) |
+| 3 | Tool Calling 与工具系统 | Tool schema 如何设计，工具权限、失败、重试和审计如何处理。 | 已沉淀：[Tool Card 模板](docs/react-framework/tool-card-template.md) |
 | 4 | Context Engineering | 什么信息应该进入上下文，如何压缩、隔离、检索和复用上下文。 | 已沉淀：[长文深度解析：大模型的上下文陷阱与 6 大修复技巧](docs/context-engineering/context-engineering.md)、[Context Engineering 2.0](docs/context-engineering-2.0-pdf/context_engineering_2_cn_notes.md)、[Agent 架构综述：从 Prompt 到上下文工程构建 AI Agent](docs/build-agent-context-engineering/build-agent-context-engineering.md) |
 | 5 | Memory 与 RAG | 短期记忆、长期记忆、RAG、向量检索和知识库如何支撑 agent。 | 待沉淀 |
 | 6 | Workflow 与 Multi-Agent | 什么时候用 workflow，什么时候拆 multi-agent，角色边界如何划分。 | 待沉淀 |
@@ -56,6 +58,8 @@
 2. [长文深度解析：大模型的上下文陷阱与 6 大修复技巧](docs/context-engineering/context-engineering.md)：理解长上下文并不天然可靠，重点关注上下文失效模式和修复手段。
 3. [Context Engineering 2.0](docs/context-engineering-2.0-pdf/context_engineering_2_cn_notes.md)：再理解上下文工程，明确上下文不是越多越好，而是要围绕当前任务做选择、压缩、隔离和复用。
 4. [Agent 架构综述：从 Prompt 到上下文工程构建 AI Agent](docs/build-agent-context-engineering/build-agent-context-engineering.md)：保留原文和本地图片资源，作为从提示词、上下文工程到 Agent 规划的外部资料入口。
+5. [ReAct 框架：从推理行动循环到可控 Agent](docs/react-framework/react-framework.md)：理解 Reasoning + Acting 的基础循环，并把它转成可控的工具、状态、停止条件和 trace 设计。
+6. [Tool Card 模板](docs/react-framework/tool-card-template.md)：沉淀工具说明模板，帮助模型正确选择工具、理解输入输出、处理错误和遵守权限边界。
 
 ### 项目迁移检查
 
@@ -93,6 +97,9 @@ learn-ai-agent/
 │   ├── context-engineering-2.0-pdf/
 │   │   ├── context_engineering_2_cn_notes.md
 │   │   └── context_engineering_2_figures/
+│   ├── react-framework/
+│   │   ├── react-framework.md
+│   │   └── tool-card-template.md
 │   └── build-agent-context-engineering/
 │       ├── build-agent-context-engineering.md
 │       └── images/
@@ -102,7 +109,7 @@ learn-ai-agent/
 
 ## 后续计划
 
-- 增加 Agent Loop、Tool Calling、Memory、Multi-Agent、RAG、Eval 等专题整理。
+- 增加 Memory、Multi-Agent、RAG、Eval 等专题整理。
 - 补充优秀开源 Agent 项目的架构阅读材料。
 - 沉淀 AI Agent 面试问答和项目表达材料。
 - 将学习资料逐步组织成“概念 -> 设计原则 -> 工程实践 -> 项目复盘”的完整路径。

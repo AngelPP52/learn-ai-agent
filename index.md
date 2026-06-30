@@ -7,6 +7,8 @@
 | 主题 | 文档 | 摘要 |
 |---|---|---|
 | 12-Factor Agents | [12-Factor Agents 设计原则](docs/12-factor-agents/12-factor-agents-principles.md) | 从 agent loop、上下文窗口、控制流、状态恢复和人类介入等角度，总结 12-Factor Agents 的工程化设计原则。 |
+| ReAct 框架 | [ReAct 框架：从推理行动循环到可控 Agent](docs/react-framework/react-framework.md) | 梳理 ReAct 的推理行动循环、最小实现、prompt 结构、失败模式、评测指标和生产控制点。 |
+| Tool Card 模板 | [Tool Card 模板](docs/react-framework/tool-card-template.md) | 提供工具描述模板，覆盖适用边界、输入输出 schema、错误类型、安全要求和调用示例。 |
 | Context Engineering 2.0 | [Context Engineering 2.0](docs/context-engineering-2.0-pdf/context_engineering_2_cn_notes.md) | 从论文视角梳理上下文工程的定义、历史阶段、设计框架和 agent 系统中的实践意义。 |
 
 ## 写作规范
