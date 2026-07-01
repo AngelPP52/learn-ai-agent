@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">Orchestration patterns</title>
+  <desc id="desc">Single-agent, manager, and decentralized orchestration patterns.</desc>
+  <rect width="960" height="430" fill="#f7f7f2"/>
+  <text x="170" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#111827">Single agent</text>
+  <text x="480" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#111827">Manager</text>
+  <text x="790" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#111827">Decentralized</text>
+  <rect x="92" y="104" width="156" height="70" rx="8" fill="#111827"/>
+  <text x="170" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">Agent</text>
+  <rect x="72" y="250" width="196" height="56" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="170" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#111827">Tools + workflow</text>
+  <path d="M170 174 L170 250" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <rect x="402" y="84" width="156" height="70" rx="8" fill="#111827"/>
+  <text x="480" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">Manager</text>
+  <rect x="328" y="230" width="130" height="58" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="393" y="264" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#111827">Worker A</text>
+  <rect x="502" y="230" width="130" height="58" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="567" y="264" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#111827">Worker B</text>
+  <rect x="415" y="328" width="130" height="58" rx="8" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="480" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#111827">Worker C</text>
+  <path d="M480 154 L393 230" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M480 154 L567 230" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M480 154 L480 328" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <circle cx="790" cy="128" r="44" fill="#111827"/>
+  <text x="790" y="134" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">A</text>
+  <circle cx="716" cy="268" r="44" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="716" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#111827">B</text>
+  <circle cx="864" cy="268" r="44" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="864" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#111827">C</text>
+  <circle cx="790" cy="350" r="44" fill="#ffffff" stroke="#374151" stroke-width="2"/>
+  <text x="790" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#111827">D</text>
+  <path d="M766 166 L737 230" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M814 166 L843 230" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M746 293 L760 325" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M834 293 L820 325" stroke="#6b7280" stroke-width="2" fill="none"/>
+</svg>
