@@ -10,6 +10,7 @@
 | `langchain_router_chain_demo.py` | 用 LangChain classic `RouterChain` + `MultiRouteChain` 把路由逻辑封装成可组合 chain。 |
 | `02_langgraph_router_state_loop.py` | 用 LangGraph `StateGraph`、条件边和循环展示多步状态、路由、质量门和可观测更新。 |
 | `03_langgraph_human_interrupt_visualize.py` | 用 LangGraph `interrupt`、checkpointer 和 Mermaid 图展示人工确认、暂停恢复和结构可视化。 |
+| `evaluation_frameworks/` | 用 DeepEval 和 AgentBench 说明 LLM 应用测试、agent benchmark、多轮任务环境和成功率报告。 |
 
 ## 安装依赖
 
@@ -26,6 +27,17 @@ python3 demo/00_if_else_router.py
 python3 demo/langchain_router_chain_demo.py
 python3 demo/02_langgraph_router_state_loop.py
 python3 demo/03_langgraph_human_interrupt_visualize.py
+```
+
+评估框架示例使用独立依赖，避免和 LangChain classic 示例互相影响：
+
+```bash
+python3 -m venv .venv-eval
+source .venv-eval/bin/activate
+python3 -m pip install -r demo/evaluation_frameworks/requirements.txt
+
+python3 demo/evaluation_frameworks/deepeval_custom_metric_demo.py
+python3 demo/evaluation_frameworks/agentbench_mini_harness.py
 ```
 
 ## 关键理解
